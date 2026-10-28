@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px 0;
+        }
+
+        /* Main Container Card */
+        .container {
+            width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #538446; /* Green theme color matching the lab exercise */
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Profile Picture Styling */
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            margin: 5px 0;
+            font-size: 22px;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 12px;
+            color: #ffffff;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 25px 30px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333333; /* Dark Charcoal Header Text */
+            font-size: 18px;
+        }
+
+        .section p {
+            color: #555555; /* Medium Dark Gray Text */
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .skills-list {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 13px;
+            color: #555555;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        /* Projects Table */
+        .projects-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .projects-table th {
+            background-color: #538446;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #538446;
+        }
+
+        .projects-table td {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            font-size: 12px;
+            color: #555555;
+        }
+
+        .preview-box {
+            width: 40px;
+            height: 35px;
+            background-color: #dcdcdc;
+            margin: 0 auto;
+        }
+
+        /* Contact Form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 12px;
+            font-family: inherit;
+        }
+
+        .submit-btn {
+            background-color: #538446;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #538446;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            font-size: 11px;
+        }
+
+        .footer p {
+            margin: 0 0 5px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Section -->
+        <div class="header">
+            <!-- Profile Image Placeholder -->
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Thanugi Wathsaree Ariyarathna</h1>
+            <p>Web Developer | Designer | Problem Solver</p>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="section">
+            2. Projects
+            <p>
+                I'm an undergraduate student at University of Sri Jayewardenepura, Faculty of Applied Sciences. 
+                Currently pursuing the CS/STAT combination. I love coding and web design.
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>C language</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+            <table class="projects-table">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Technology Used</th>
+                        <th>Preview</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Portfolio Website</td>
+                        <td>Personal website to showcase my skills and projects.</td>
+                        <td>HTML, CSS</td>
+                        <td><div class="preview-box"></div></td>
+                    </tr>
+                    <tr>
+                        <td>E-commerce Site</td>
+                        <td>An online shopping platform with cart functionality.</td>
+                        <td>React, Node.js</td>
+                        <td><div class="preview-box"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Blog Platform</td>
+                        <td>A platform for users to share their stories and posts.</td>
+                        <td>Python, Flask</td>
+                        <td><div class="preview-box"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>Connect with me:</p>
+            <a href="https://github.com" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
